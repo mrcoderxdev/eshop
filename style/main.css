@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  transition: .5s ease;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 25px 100px;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.brand {
+  width: 70px;
+}
+
+.brand img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navigation a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 35px;
+}
+
+.navigation a:hover {
+  color: #FF7C03;
+}
+
+.navigation a.active {
+  color: #FF7C03;
+}
+
+.settings {
+  margin-left: 90px;
+}
+
+.settings span {
+  width: 10px;
+}
+
+.settings span img {
+  width: 25px;
+  cursor: pointer;
+}
+
+section {
+  padding: 100px;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.home .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.home .content-title {
+  position: relative;
+}
+
+.home .content-title h2 {
+  margin-top: 80px;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.home .content-title p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.home .content-title .btn,
+.newspaper .btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 15px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #FF7C03;
+}
+
+.col-left {
+  position: relative;
+  width: 45%;
+}
+
+.col-right {
+  position: relative;
+  width: 45%;
+}
+
+.img-card {
+  position: relative;
+  width: 100%;
+}
+
+.img-card img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.featured {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.featured .content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  width: 47%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F8F7FC;
+  box-shadow: 1px 2px 4px rgb(15 54 55 / 10%);
+}
+
+.card img {
+  width: 35%;
+}
+
+.card-title h3 {
+  margin-bottom: 15px;
+}
+
+.shop,
+.new {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shop .content,
+.new .content,
+.newspaper .content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.shop-card {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1px 2px 4px rgb(15 54 55 / 10%);
+}
+
+.img-content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F8F7FC;
+}
+
+.img-content img {
+  width: 50%;
+}
+
+.shop-descr {
+  position: relative;
+  width: 100%;
+  padding: 25px;
+}
+
+.shop-descr h2 {
+  float: left;
+}
+
+.shop-descr .icon {
+  float: right;
+  background-color: #FF7C03;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.shop-card span {
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+
+.newspaper input {
+  width: 440px;
+  border: unset;
+  background-color: transparent;
+  font-size: 18px;
+  outline: none;
+}
+
+.newspaper label {
+  display: flex;
+  background-color: #F8F7FC;
+  padding: 0 15px 15px;
+  border-radius: 10px;
+  color: #1a1d22;
+  box-shadow: 1px 2px 4px rgb(15 54 55 / 10%);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px 100px;
+  background-color: #000016;
+}
+
+.icons .bx {
+  font-size: 30px;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.icons .bx:hover {
+  color: #FF7C03;
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+footer img {
+  width: 150px;
+  vertical-align: middle;
+  background-color: rgb(173, 164, 164);
+}
+
+footer h3 {
+  color: #fff;
+}
+
+@media (max-width: 1049px) {
+
+  section,
+  footer {
+    padding: 50px;
+  }
+
+  .column {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .home .content,
+  .featured .content {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .featured .content .card,
+  .newspaper label {
+    width: 100%;
+  }
+
+  .img-card img {
+    position: relative;
+  }
+}
