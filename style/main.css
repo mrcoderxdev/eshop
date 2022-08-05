@@ -54,6 +54,11 @@ header {
   color: #FF7C03;
 }
 
+.menu-btn img {
+  display: none;
+
+}
+
 .settings {
   margin-left: 90px;
 }
@@ -246,14 +251,17 @@ section {
 }
 
 .newspaper input {
-  width: 440px;
+
+  width: 80%;
   border: unset;
   background-color: transparent;
   font-size: 18px;
   outline: none;
 }
 
-.newspaper label {
+.newspaper .subs {
+  position: relative;
+  top: 0;
   display: flex;
   background-color: #F8F7FC;
   padding: 0 15px 15px;
@@ -293,7 +301,18 @@ footer h3 {
   color: #fff;
 }
 
+
 @media (max-width: 1049px) {
+
+  header {
+    padding: 25px 50px;
+  }
+
+  .menu-btn img {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
 
   section,
   footer {
@@ -308,7 +327,30 @@ footer h3 {
   }
 
   .navigation {
+    width: 240px;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    background-color: rgba(103, 136, 125, 0.527);
+    height: 100vh;
+    padding-left: 50px;
     display: none;
+  }
+
+  .navigation.active {
+    display: block;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: transform .5s ease;
+  }
+
+
+  .settings {
+    margin: 0;
+    margin-left: -105px;
   }
 
   .home .content,
